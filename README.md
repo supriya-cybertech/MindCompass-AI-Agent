@@ -79,8 +79,31 @@ sequenceDiagram
 ```
 
 -----
-🔐 1. Safety Agent
+## 🏗️ Project Structure
+```text
+mindcompass/
+│
+├── README.md
+├── writeup.md
+├── requirements.txt
+│
+├── agents/
+│   ├── emotion_agent.py
+│   ├── microcoach_agent.py
+│   ├── resource_agent.py
+│   ├── safety_agent.py
+│   ├── plan_agent.py
+│
+├── core/
+│   ├── orchestrator.py
+│   ├── memory.py
+│
+├── ui/
+│   ├── gradio_app.py
+│   ├── streamlit_app.py
+│
+└── notebooks/
+    └── mindcompass_dev.ipynb
 
-Detects crisis signals (self-harm, suicidal language, severe distress).
-If triggered → bypass all agents → deliver crisis hotlines & immediate help info.
 
+```
